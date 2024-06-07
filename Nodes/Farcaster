@@ -1,1 +1,52 @@
+# Farcaster
+Farcastercr Node Installation Instructions </br>
+
+### The guide was written by the author of the channel [@Dikcicrypto](https://t.me/DikciCrypto)
+
+### [Official documentation](https://docs.farcaster.xyz/)
+
+### System requirements: </br>
+CPU: 4 Core </br>
+RAM: 16 Gb </br>
+SSD: 200 Gb </br>
+OS: Ubuntu 20.04 or 22.04 </br>
+
+### Network configurations: </br>
+Outbound - allow all traffic </br>
+Inbound - open the following ports :</br>
+1317 - REST </br>
+26657 - TENDERMINT_RP </br>
+26656 - Cosmos </br>
+Running as a Provider? Add these specific ports: </br>
+22221 - provider port </br>
+22231 - provider port </br>
+22241 - provider port </br>
+
+Filling out the [form](https://tally.so/r/wLzqMp) for the validator
+    
+# Manual configuration of the Lava node with Cosmovisor
+Required packages installation </br>
+```
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y curl git jq lz4 build-essential
+sudo apt install -y unzip logrotate git jq sed wget curl coreutils systemd
+sudo apt install screen -y
+```
+
+# Go install node
+```
+Go to the [site](https://app.infura.io/).
+Create api:Name Farcaster.
+We take the http network:eth mainnet + optimism mainnet
+
+
+
+curl -sSL https://download.thehubble.xyz/bootstrap.sh | bash
+We are asked for APIs, we take them above and insert them in the terminal.
+We are also asked for a FID, which can be found in our profile by clicking on the three dots-about.
+```
+
+
+
 
